@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Columbia Business School palette */
+    --background: 210 33% 98%; /* columbia-ice #F4F9FC */
+    --foreground: 213 62% 15%; /* columbia-navy tint */
+    --card: 0 0% 100%;
+    --card-foreground: 213 62% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 62% 15%;
+    --primary: 213 62% 15%; /* columbia-navy #0C2340 */
+    --primary-foreground: 207 44% 82%; /* columbia-blue #B9D9EB */
+    --secondary: 207 44% 93%; /* columbia-light #E8F2F8 */
+    --secondary-foreground: 213 62% 15%;
+    --muted: 207 44% 93%;
+    --muted-foreground: 211 30% 40%;
+    --accent: 41 46% 56%; /* accent-gold #C4A35A */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 207 30% 88%;
+    --input: 207 30% 88%;
+    --ring: 211 55% 37%; /* columbia-mid #2A5F8F */
+    --radius: 0.5rem;
+
+    /* Extended palette as custom properties */
+    --columbia-blue: 207 44% 82%;
+    --columbia-dark: 213 52% 23%;
+    --columbia-navy: 213 62% 15%;
+    --columbia-mid: 211 55% 37%;
+    --columbia-light: 207 44% 93%;
+    --columbia-ice: 210 33% 98%;
+    --gold: 41 46% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "DM Sans", sans-serif;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Playfair Display", serif;
+  }
+  code,
+  .font-mono {
+    font-family: "JetBrains Mono", monospace;
+  }
+}
